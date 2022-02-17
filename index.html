@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settle on your money</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="text-center text-info mt-5 mb-5">Settle on your money </h1>
+    </header>
+
+    <main class="container  ">
+        <section class="d-flex ">
+
+            <div col-sm>
+                <img src="image/muny.jpg" alt="">
+            </div>
+
+            <div class="bg-success p-2 text-dark bg-opacity-10 w-50 px-5 mx-5 col-sm  ">
+
+                <div>
+                    <h2 class="text-center me-5">income</h2>
+                </div>
+
+                <div class="input-group mb-3 w-50 ms-5 ">
+                    <h6 class="mx-3 mt-2">income:</h6>
+                    <input type="text" class="form-control " id="income" placeholder="income"
+                        aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+
+                <div>
+                    <h4 class="text-center me-5">Expenses</h4>
+                </div>
+                <div class="input-group mb-3 w-50 ms-5">
+                    <h6 class="mx-3 mt-2 ">Food:</h6>
+                    <input type="text" id="food-cost" class="form-control " placeholder="Food"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+
+                </div>
+
+                <div class="input-group mb-3 w-50 ms-5">
+                    <h6 class="mx-3 mt-2">Rent:</h6>
+                    <input type="text" id="rent-cost" class="form-control" placeholder="Rent"
+                        aria-label="Example text with two button addons">
+                </div>
+
+                <div class="input-group mb-3 w-50 ms-5">
+                    <h6 class="mx-3 mt-2">Clothes:</h6>
+                    <input type="text" class="form-control" id="clothes-cost" placeholder="Clothes"
+                        aria-label="Recipient's username with two button addons">
+
+                </div>
+
+                <div>
+                    <button class="btn btn-outline-secondary bg-info text-white px-5 marginCal"
+                        id="claculate-bt">Claculate</button>
+                    <h4 class="my-3 text-center ">Total Expenses: <span id="Expenses-total">$00</span> </h4>
+                    <h4 class="text-center">Balance: <span id="balance">$00</span> </h4>
+                </div>
+
+                <div class=" mb-3 w-25 ms-5 d-flex">
+                    <div class="">
+                        <h6 class="mx-3 mt-2">Save:</h6>
+                    </div>
+
+                    <div class="">
+
+                        <input type="text" class="form-control px-5" placeholder=""
+                            aria-label="Recipient's username with two button addons">
+                    </div>
+                    <div class="">
+
+                        <h6 class="mx-3 mt-2">%</h6>
+
+                    </div>
+                    <div class="">
+                        <button class="btn btn-outline-secondary bg-info text-white px-5 ms-"
+                            type="button">Save</button>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <p>Saving Amount:</p>
+                    <p>Rimainig:</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="js/functiion.js"></script>
+</body>
+
+</html>
