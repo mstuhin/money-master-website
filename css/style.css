@@ -3,14 +3,14 @@ margin-left: 135px;
 } */
 
 
-/* Global Styling  */
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-/* Hero Section Styling  */
+
 .hero {
 	background-color: #dee0f0;
 	padding: 80px 150px;
@@ -25,26 +25,26 @@ margin-left: 135px;
 	height: 60px;
 }
 
-/* Hero Image Styling  */
+
 .hero-image img {
 	height: 725px;
 	width: 600px;
 }
 
-/* Hero Savings Area Design  */
+
 .hero-savings {
 	background-color: aliceblue;
 	padding: 50px 70px;
 	text-align: center;
 }
 
-/* Error Validation Styling */
+
 .validation-error {
 	color: rgb(252, 87, 87);
 	font-weight: bold;
 }
 
-/* Responsive Start  */
+
 @media screen and (max-width: 484px) {
 	.hero {
 		padding: 50px 15px;
