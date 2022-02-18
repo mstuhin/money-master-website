@@ -1,3 +1,76 @@
-.marginCal{
+/* .marginCal{
 margin-left: 135px;
+} */
+
+
+/* Global Styling  */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Hero Section Styling  */
+.hero {
+	background-color: #dee0f0;
+	padding: 80px 150px;
+}
+.hero h1 {
+	color: rgba(58, 48, 52, 0.719);
+	font-size: 65px;
+	font-weight: 700;
+}
+.top-header img {
+	width: 60px;
+	height: 60px;
+}
+
+/* Hero Image Styling  */
+.hero-image img {
+	height: 725px;
+	width: 600px;
+}
+
+/* Hero Savings Area Design  */
+.hero-savings {
+	background-color: aliceblue;
+	padding: 50px 70px;
+	text-align: center;
+}
+
+/* Error Validation Styling */
+.validation-error {
+	color: rgb(252, 87, 87);
+	font-weight: bold;
+}
+
+/* Responsive Start  */
+@media screen and (max-width: 484px) {
+	.hero {
+		padding: 50px 15px;
+	}
+	.hero h1 {
+		font-size: 26px;
+	}
+	.top-header img {
+		width: 40px;
+		height: 40px;
+	}
+	.main-area {
+		flex-direction: column;
+	}
+	.main-area .hero-image,
+	.hero-savings {
+		width: 100% !important;
+	}
+	.hero-image {
+		margin-right: 0px !important;
+		margin-bottom: 40px;
+	}
+	.hero-image img {
+		height: 300px !important;
+	}
+	.hero-savings {
+		padding: 50px 30px;
+	}
 }

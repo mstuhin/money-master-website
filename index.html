@@ -2,104 +2,119 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settle on your money</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- BootStrap Cdn Link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
+    <!-- Custom Css File  -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Settle on your money</title>
 </head>
 
 <body>
 
-    <header>
-        <h1 class="text-center text-info mt-5 mb-5">Settle on your money </h1>
-    </header>
-
-    <main class="container  ">
-        <section class="d-flex ">
-
-            <div col-sm>
-                <img src="image/muny.jpg" alt="">
-            </div>
-
-            <div class="bg-success p-2 text-dark bg-opacity-10 w-50 px-5 mx-5 col-sm  ">
-
-                <div>
-                    <h2 class="text-center me-5">income</h2>
-                </div>
-
-                <div class="input-group mb-3 w-50 ms-5 ">
-                    <h6 class="mx-3 mt-2">income:</h6>
-                    <input type="text" class="form-control " id="income" placeholder="income"
-                        aria-label="Example text with button addon" aria-describedby="button-addon1">
-                </div>
-
-                <div>
-                    <h4 class="text-center me-5">Expenses</h4>
-                </div>
-                <div class="input-group mb-3 w-50 ms-5">
-                    <h6 class="mx-3 mt-2 ">Food:</h6>
-                    <input type="text" id="food-cost" class="form-control " placeholder="Food"
-                        aria-label="Recipient's username" aria-describedby="button-addon2">
-
-                </div>
-
-                <div class="input-group mb-3 w-50 ms-5">
-                    <h6 class="mx-3 mt-2">Rent:</h6>
-                    <input type="text" id="rent-cost" class="form-control" placeholder="Rent"
-                        aria-label="Example text with two button addons">
-                </div>
-
-                <div class="input-group mb-3 w-50 ms-5">
-                    <h6 class="mx-3 mt-2">Clothes:</h6>
-                    <input type="text" class="form-control" id="clothes-cost" placeholder="Clothes"
-                        aria-label="Recipient's username with two button addons">
-
-                </div>
-
-                <div>
-                    <button class="btn btn-outline-secondary bg-info text-white px-5 marginCal"
-                        id="claculate-bt">Claculate</button>
-                    <h4 class="my-3 text-center ">Total Expenses: <span id="Expenses-total">$00</span> </h4>
-                    <h4 class="text-center">Balance: <span id="balance">$00</span> </h4>
-                </div>
-
-                <div class=" mb-3 w-25 ms-5 d-flex">
-                    <div class="">
-                        <h6 class="mx-3 mt-2">Save:</h6>
-                    </div>
-
-                    <div class="">
-
-                        <input type="text" class="form-control px-5" placeholder=""
-                            aria-label="Recipient's username with two button addons">
-                    </div>
-                    <div class="">
-
-                        <h6 class="mx-3 mt-2">%</h6>
-
-                    </div>
-                    <div class="">
-                        <button class="btn btn-outline-secondary bg-info text-white px-5 ms-"
-                            type="button">Save</button>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <p>Saving Amount:</p>
-                    <p>Rimainig:</p>
-                </div>
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="top-header d-flex justify-content-center align-items-center mb-5">
+                <h1 class="text-center me-3">Settle on your money</h1>
 
             </div>
-        </section>
-    </main>
+            <div class="main-area d-flex justify-content-center align-items-center mt-5">
+                <div class="hero-image w-50 me-5">
+                    <img src="image/muny.jpg" alt="" class="img-fluid" />
+                </div>
+                <div class="hero-savings w-50">
+                    <!-- Income Field Design Start  -->
+                    <div class="saving-container">
+                        <div class="income mb-4">
+                            <h4 class="text-center mb-3">Income</h4>
+                            <div class="income-field d-flex justify-content-center align-items-center mb-3">
+                                <h5>Income:</h5>
+                                <input type="text" class="form-control ms-3" placeholder="10000" aria-label="Username"
+                                    id="income-field" />
+                            </div>
+                            <small id="income-error" class="validation-error" style="display: none">Validation
+                                message</small>
+                        </div>
+                        <!-- Expenses  Design Start  -->
+                        <div class="expenses">
+                            <h4 class="text-center mb-3">Expenses</h4>
+
+                            <!-- Food Design  -->
+                            <div class="income-field d-flex justify-content-center align-items-center mb-3">
+                                <h5 class="text-end me-4">Food:</h5>
+                                <input type="text" class="form-control ms-3" placeholder="3000" aria-label="Username"
+                                    id="food-field" />
+                            </div>
+                            <small id="food-error" class="validation-error" style="display: none">Validation
+                                message</small>
+
+                            <!-- Rent   -->
+                            <div class="income-field d-flex justify-content-center align-items-center mb-3">
+                                <h5>Rent:</h5>
+                                <input type="text" class="form-control ms-5" placeholder="2000" aria-label="Username"
+                                    id="rent-field" />
+                            </div>
+                            <small id="rent-error" class="validation-error" style="display: none">Validation
+                                message</small>
 
 
+                            <div class="income-field d-flex justify-content-center mb-4">
+                                <h5>Clothes:</h5>
+                                <input type="text" class="form-control ms-3" placeholder="500" aria-label="Username"
+                                    id="clothes-field" />
+                            </div>
+                            <small id="cloths-error" class="validation-error" style="display: none">Validation
+                                message</small>
 
+                            <!-- Calculat Design  -->
+                            <div class="calculate-btn d-flex justify-content-center mb-4">
+                                <button type="button" class="btn d-block btn-primary" id="calculate-btn">
+                                    Calculate
+                                </button>
+                            </div>
+                            <h5 class="text-center mb-3">
+                                Total Expenses : <span id="total-expenses">0</span>
+                            </h5>
+                            <h5 class="text-center mb-3">
+                                Balance : <span id="balance">0</span>
+                            </h5>
+                        </div>
+                        <small id="balance-error" class="validation-error" style="display: none">Expenses Cannot Be
+                            Greater Than Income. Please Earn first then
+                            spent. Thanks</small>
+                        <!-- Savings Design  -->
+                        <div class="d-flex justify-content-center align-items-center mt-4">
+                            <div class="d-flex justify-content-center align-items-center center-form">
+                                <h5>Save:</h5>
+                                <input type="text" class="form-control ms-3" placeholder="20" aria-label="Username"
+                                    id="save-field" />
+                            </div>
+
+                            <h4 class="ms-3"><strong>%</strong></h4>
+                            <button id="saving-btn" type="button" class="btn d-block btn-primary ms-3">
+                                Save
+                            </button>
+                        </div>
+
+                        <h5 class="text-center mt-4 mb-3">
+                            Saving Amount : <span id="saving">0</span>
+                        </h5>
+                        <h5 class="text-center mb-3">
+                            Remaining Balance : <span id="remainigBalance">0</span>
+                        </h5>
+                        <small id="savingValMgs" class="validation-error" style="display: none">Validation
+                            message</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Custom Js File  -->
     <script src="js/functiion.js"></script>
 </body>
 
